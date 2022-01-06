@@ -1,0 +1,21 @@
+{
+  "name": "onstore",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^11.2.0",
+    "electron-packager": "^15.2.0"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cheerio": "^1.0.0-rc.5",
+    "clipboardy": "^2.3.0",
+    "node-fetch": "^2.6.1"
+  },
+  "description": ""
+}

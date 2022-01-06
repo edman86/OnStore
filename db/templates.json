@@ -1,0 +1,62 @@
+[
+    {
+        "name": "Onshop Zexchi kupon",
+        "value": "OnshopZexchiKupon",
+        "body": "Hargeli %name% Duq stanum eq mekangamya zexchi cackagir, Onshop.am kajqic Dzer hajord patver@ amragrelu hamar: Zexchi Cackagir: Shnorhakal enq vor mez het eq."
+    },
+    {
+        "name": "Amanorya Zexchi kupnner",
+        "value": "AmanoryaZexchiKupnner",
+        "body": "Sireli %name% Shnorhavroum enq galiq toneri kapakcutyamb: Dzer Zexchi tsatskagirn e - AM96454"
+    },
+    {
+        "name": "operatori her. terminali mot",
+        "value": "operatoriHerTerminaliMot",
+        "body": "Vcharman het kapvac djvarutyunneri depqum karox eq henc terminali motic zangaharel operatorin Her: 055594757 Mer Idram ID: 620620620"
+    },
+    {
+        "name": "cvcharvac patver, terminalov",
+        "value": "cvcharvacPatverTerminalov",
+        "body": "Hargeli %name% hishecnum enq, vor Duq uneq chvcharvac patver: Arjeq@: Inchpes vcharel TERMINALOV: https://china.onshop.am/page/Payment"
+    },
+    {
+        "name": "wnc patvirem, chi stacvum",
+        "value": "wncPatviremChiStacvum",
+        "body": "Hargeli %name% patvirelu kargin canotanalu hamar, anceq hxumov` https://china.onshop.am/page/how_to_order"
+    },
+    {
+        "name": "Terminal",
+        "value": "Terminal",
+        "body": "Hargeli %name% terminalov vcharman kargin canotanalu hamar` https://china.onshop.am/page/Payment Vcharum@ katareluc heto mi moraceq zangaharel operatorin:"
+    },
+    {
+        "name": "fb ej, kayqi link, heraxosahamar, hasce",
+        "value": "fbejkayqilinkheraxosahamarhasce",
+        "body": "Hargeli %name% Dzez enq uxarkum mer kontakner@ facebook ej:https://www.facebook.com/onshop.am kayq: https://china.onshop.am Hasce:Proshyan 28/3"
+    },
+    {
+        "name": "idram",
+        "value": "idram",
+        "body": "Hargeli %name% patvirel eq . postayin araqman depqum vcharum eq arcanc. tramadrum enq Dzez idram hashvehamar, vcharum@ katareluc heto kxndreinq uxarkel mez ktroni foton: Arjeq: Uxarkel ktroni photon tvyal Viberi heraxosahamarin: 055594757 IDram ID:620620620"
+    },
+    {
+        "name": "chvcharvac patver",
+        "value": "chvcharvacPatver",
+        "body": "Hargeli %name% hishecnum enq, vor Duq uneq chvcharvac patver https://china.onshop.am/ kayqum: Avelin` +37460462646"
+    },
+    {
+        "name": "Lav_Hachaxord Propmo",
+        "value": "LavHachaxordPropmo",
+        "body": "Hargeli %name%, Something-y chi moracel Dzez ev nvirum e 500-dri hamarjeq PROMO Tsatskagir- #text# Shnorhakal enq www.Something.am -in vstahelu hamar."
+    },
+    {
+        "name": "Something Promo",
+        "value": "SomethingPromo",
+        "body": "Voghjuyn, duq stanum eq bonus ktron www.Something.am-ic, maghtum enq barzr tramadrutyun ev hajeli Something-ne: TSATSKAGIR` #text#"
+    },
+    {
+        "name": "Something BONUS",
+        "value": "SomethingBONUS",
+        "body": "Something.am shnorhavorum e Dzez tsnndyan orva kapakcutyamb ev nvirum 500 drami hamarjeq BONUS, http://something.am -um ogtagortselu hamar`tsatsgagir- #text#"
+    }
+]

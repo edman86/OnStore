@@ -1,0 +1,344 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(../assets/fonts/Roboto-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../assets/fonts/Roboto-Bold.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+:root {
+    box-sizing: border-box;
+    font-size: 1.125em;
+    --onshopColor: #26bae0;
+    --btnActivate: darkorange;
+    --btnNotActive: crimson;
+    --btnNotActiveNeutral: #fff; 
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    background-color: var(--onshopColor);
+    background-image: url(../assets/static1.png);
+    background-position: center center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    outline: none;
+}
+
+.menu {
+    width: 800px;
+    height: 600px;
+    background-color: rgba(27, 28, 37);
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #fff;
+    border-radius: 40px;
+    box-shadow: 0 0 0 4px rgb(27, 28, 37),
+                0 0 25px rgb(27, 28, 37);
+
+    /*background-color: rgba(27, 28, 37, .9);*/            
+    /*backdrop-filter: blur(15px);            */
+}
+
+.menu__title {
+    text-align: center;
+    color: #fff;
+    font-weight: normal;
+}
+
+.menu__buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu__group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu__button {
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: inherit;
+    border: 3px solid var(--btnNotActiveNeutral);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: rgba(27, 28, 37, .4);
+    transition: border-color 0.5s, box-shadow 0.5s;
+}
+
+.label  {
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.menu__button:hover > .icon {
+    fill: var(--btnActivate);
+}
+
+.menu__button:hover > .label {
+    color: var(--btnActivate);
+}
+
+.menu__button:hover {
+    border-color: var(--btnActivate);
+    box-shadow: 0 0 15px var(--btnActivate), inset 0 0 10px var(--btnActivate);
+}
+
+.icon {
+    display: block;
+    width: 100px;
+    fill: var(--btnNotActiveNeutral);
+    transition: fill 0.5s;
+}
+
+.label {
+    margin: 0;
+    color: var(--btnNotActiveNeutral);
+    transition: color 0.5s;
+}
+
+/* ================================ Parse menu ===================================== */
+
+.parse-menu {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+
+.parse-menu .menu__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 1.5em;
+    width: 450px;
+}
+
+.menu__label {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 0.2em;
+}
+
+.menu__input {
+    font-size: 1.2rem;
+    padding: 0.2em;
+    border: none;
+    border-radius: 10px;
+    border: 1px solid #aaa;
+    outline: none;
+    background-color:rgb(55, 57, 77);
+    color: var(--btnActivate);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.menu__input:focus {
+    border-color: var(--btnActivate);
+    box-shadow: 0 0 7px var(--btnActivate), inset 0 0 7px var(--btnActivate);
+}
+
+.menu__input::-webkit-outer-spin-button,
+.menu__input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.category option {
+    color: #aaa;    
+}
+
+.btn {
+    outline: none;
+    font-size: 1.2rem;
+    width: 450px;
+    padding: 0.5em 1em;
+    cursor: pointer;
+
+}
+
+.startBtn {
+    margin-top: 1.5em;
+    border: 0;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: rgb(158, 87, 0);
+    color: rgb(27, 28, 37);
+    transition: box-shadow 0.3s, background-color 0.3s;  
+}
+
+.startBtn:hover {
+    background-color: var(--btnActivate);
+    box-shadow: 0 0 10px var(--btnActivate);
+}
+
+/* ===================================== Modal ====================================== */
+
+.modal-indicator {
+    display: none;
+}
+
+.modal-indicator.appearance {
+    display: block;
+}
+
+.modal-indicator__backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    z-index: 1;   
+}
+
+.modal-indicator__body {
+    position: fixed;
+    top: 15rem;
+    bottom: 15rem;
+    right: 20%;
+    left: 20%;
+    padding: 2em 3em;
+    background-color: #aaa;
+    border-radius: 1.5em;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(27, 28, 37);
+    box-shadow: 0 0 10px var(--btnActivate);
+    font-size: 1.2rem;
+}
+
+.modal-indicator .label {
+    margin-bottom: 0.5em;
+    color: rgb(255, 174, 75);
+    text-shadow: 0 0 15px var(--btnActivate);
+}
+
+/* =================================== Result ===================================== */
+
+.result {
+    height: 100vh;
+}
+.result__table {
+    margin-top: 5em;
+    background-color: #fff;
+    border-collapse: collapse;
+}
+
+.result__table tr:nth-child(2n) {
+    background-color: #ddd;
+}
+ 
+.result__table th, .result__table td {
+    border: 1px solid black;
+    padding: 1em;
+}
+
+/* =================================== Message ===================================== */
+
+.message-menu {
+    flex-direction: column;
+    justify-content: center;
+    height: 600px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.message-menu__item {
+    width: 100%;
+    margin-bottom: 0.5em;
+}
+
+.message-menu__item .menu__input {
+    width: 100%;
+}
+
+.message-menu__item.textarea {
+    margin-bottom: 0;
+}
+
+.message-menu__item textarea {
+    font-family: inherit;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.row .paste {
+    width: 50px;
+    height: 37px;
+    margin-left: 15px;
+    text-indent: 200px;
+    overflow: hidden;
+    border: 0;
+    border-radius: 10px;
+    background-image: url(../assets/paste.svg);
+    background-size: 50%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: rgb(172, 95, 2);
+    transition: box-shadow 0.3s, background-color 0.3s;  
+}
+
+.row .paste:hover {
+    background-color: var(--btnActivate);
+    box-shadow: 0 0 10px var(--btnActivate);
+
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: rgb(172, 95, 2);
+    cursor: pointer;
+    border: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: transparent;
+    padding: 0.2em;
+    outline: none;
+}
+
+.modal-close:hover {
+    color: var(--btnActivate);
+}

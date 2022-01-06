@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <title>Send SMS</title>
+    <link href="../style/main.css" rel="stylesheet">
+</head>
+<body>
+    <div class="menu message-menu">
+        <div class="message-menu__item">    
+            <label class="menu__label" for="phoneNumber">Введите номер телефона</label>
+            <div class="row">
+                <input class="menu__input" id="phoneNumber" type="text" placeholder="phone number">
+                <button class="btn paste" type="button">Вставить</button>
+            </div>    
+        </div>
+        <div class="message-menu__item">    
+            <label class="menu__label" for="recipient">Введите имя получателя</label>
+            <input class="menu__input" id="recipient" type="text" placeholder="recipient">
+        </div>
+        <div class="message-menu__item">    
+            <label class="menu__label" for="template">Выберите шаблон</label>
+            <select class="menu__input" id="template" placeholder="template"></select>
+        </div>
+        <div class="message-menu__item textarea">    
+            <label class="menu__label" for="messageText">Введите текст сообщения</label>
+            <textarea class="menu__input" id="messageText" rows="5"></textarea>
+        </div>
+        <div class="menu__item sendBtn">
+            <button class="btn startBtn">Отправить</button>    
+        </div>    
+    </div>
+
+    <div class="modal-indicator">
+        <div class="modal-indicator__backdrop"></div>
+        <div class="modal-indicator__body notification">
+            <button class="modal-close" type="button">X</button>
+            <p id="notification" class="label notification"></p>
+        </div>
+    </div>
+
+    <script src="message.js"></script>
+</body>
+</html>

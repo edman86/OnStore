@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <title>Checklist</title>
+    <link href="../style/main.css" rel="stylesheet">
+</head>
+<body>
+    <div class="menu parse-menu">
+        <div class="menu__item">    
+            <label class="menu__label" for="category">Выберите категорию</label>
+            <select class="menu__input category" id="category" name="category" placeholder="Category">
+                <option value="shop">Տեսականի</option>
+                <option value="headphones">Ականջակալներ</option> 
+                <option value="mobile_accessories">Հեռախոսների աքսեսուարներ</option>
+                <option value="bijuteria_accessories">Զարդեր և աքսեսուարներ</option>
+                <option value="computer_accessories">Համակարգչային աքսեսուարներ</option>
+                <option value="smart_electronics">Սմարթ էլեկտրոնիկա</option>
+                <option value="watches">Ժամացույցներ</option>
+                <option value="car_accessories">Ավտոմեքենայի աքսեսուարներ</option>
+                <option value="screen_protector_cases">Պատյաններ և պաշտպանիչ թաղանթներ</option>
+                <option value="game_hobbies">Խաղեր և աքսեսուարներ</option>
+                <option value="home">Տան համար</option>
+                <option value="Repair_Spare_Parts">1000 + 1 մանրուք</option>
+                <option value="mobile">Հեռախոսներ</option>
+                <option value="Health">Գեղեցկություն և խնամք</option>
+                <option value="Wallets_Bags_luggage">Պայուսակներ և դրամապանակներ</option>
+                <option value="for_kids">Երեխաների համար</option>
+                <option value="loudspeakers">Նվագարկիչներ</option>
+                <option value="Christmas_Home_Decor">Տոնական աքսեսուարներ և դեկոր</option>
+            </select>
+        </div>
+        <div class="menu__item">    
+            <label class="menu__label" for="pageAmount">Введите количество страниц для поиска</label>
+            <input class="menu__input" id="pageAmount" type="number" placeholder="page amount">
+        </div>
+        <div class="menu__item">    
+            <label class="menu__label" for="productAmount">Введите остаток товара</label>
+            <select class="menu__input" id="productAmount">
+                <option value="0">Нет товара</option>
+                <option value="1">Есть товар</option>
+            </select>
+        </div>
+        <div class="menu__item">
+            <button class="btn startBtn">Поиск</button>    
+        </div>    
+    </div>
+
+    <div class="modal-indicator">
+        <div class="modal-indicator__backdrop"></div>
+        <div class="modal-indicator__body">
+            <p id="notification" class="label notification">.</p>
+            <p id="pageIndicator" class="label indicator">Страница 0/0</p>
+            <p id="elementIndicator" class="label indicator">Обработано 0 элементов</p>
+        </div>     
+    </div>
+
+    <script src="parse_china.js"></script>
+</body>
+</html>
