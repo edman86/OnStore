@@ -5,7 +5,7 @@ ___
 ### The application was written specifically for the e-commerce website
 ### [onshop.am](https://www.onshop.am).
 
-![mygif](./onstore1.gif)
+![mygif](./onstore2.gif)
 ___
 ## The application currently includes 2 main opportunities:
 
@@ -19,12 +19,12 @@ The search result is placed in the generated table with the product id, name, qu
 
 The user can easily open the product on the web site from the application using the link to it.
 
-![mygif](./onstore2.gif)
+![mygif](./onstore3.gif)
 
 - ### The ability to send an SMS message to the desired number.
 Under the hood, the app is integrated with [www.mobipace.com](https://www.mobipace.com) and uses its API to send messages.
 
-![mygif](./onstore3.gif)
+![mygif](./onstore1.gif)
 ___
 ### This desctop app developed with `Electron js` framework and `Node js`.
 
